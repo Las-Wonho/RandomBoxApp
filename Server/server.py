@@ -6,7 +6,7 @@ app = Flask(__name__)
 @app.route('/random')
 def home():
     random = np.random.randint(10)
-    return random
+    return str(random)
 
 
 if __name__ == '__main__':
